@@ -1,8 +1,0 @@
-# ローカル用（`wrangler pages dev` など）。コピーして `.dev.vars` を作る。
-# `.dev.vars` は Git にコミットしないこと。
-#
-# オプション: ポートフォリオの mailto（Astro の `PUBLIC_CONTACT_EMAIL`）
-# PUBLIC_CONTACT_EMAIL=
-# PUBLIC_INSTAGRAM_URL=
-# PUBLIC_LINKEDIN_URL=
-# PUBLIC_DRIBBBLE_URL=
