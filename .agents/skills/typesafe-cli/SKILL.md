@@ -38,7 +38,9 @@ Deleting those files after the call is good. Leaving them is fine. Do not commit
 
 The CLI loads credentials. You never do.
 
-Run `typesafe auth status`. Read `data.has_key` only. If it is false, ask the human. Do not open `~/.config/typesafe/env`, `.env.local`, or print `TYPESAFE_*`.
+This project routes through **Vercel AI Gateway**. Expect `typesafe auth status` to show base URL `https://ai-gateway.vercel.sh/typesafe` and model `typesafe-ai/jev`. The Cloud Agent secret is `AI_GATEWAY_API_KEY` (mapped into `TYPESAFE_API_KEY` by the wrapper).
+
+Run `typesafe auth status`. Read `data.has_key` only. If it is false, ask the human to set `AI_GATEWAY_API_KEY`. Do not open `~/.config/typesafe/env`, `.env.local`, or print `TYPESAFE_*` / `AI_GATEWAY_*`.
 
 ## Procedure
 
