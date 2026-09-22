@@ -33,3 +33,9 @@ bun run check
 - ポートフォリオのレイアウト: `src/layouts/PortfolioLayout.astro`
 - デザイントークン・グローバル CSS: `src/styles/styles.css` の `@theme` と `html.dark` ブロック
 - `/case-study`（旧 `/portfolio` は **302** でここへ）は **認証なし**（採用担当へは URL のみ共有）。検索・クローラ抑制は **`robots.txt`**、**`PortfolioLayout` の `meta robots`**、**`public/_headers` の `X-Robots-Tag`** で多層化する。
+
+## TypeSafe（Vercel AI Gateway）
+
+- Agent skills: `.agents/skills/typesafe-ai`（設計）と `.agents/skills/typesafe-cli`（CLI）
+- ライブ呼び出しは **Vercel AI Gateway** 経由（`AI_GATEWAY_API_KEY` + base `https://ai-gateway.vercel.sh/typesafe`、model `typesafe-ai/jev`）
+- Cloud Agent セットアップ: `scripts/cloud-agent-typesafe-gateway.sh`（CLI 導入と Gateway wrapper）
