@@ -26,3 +26,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# verify-kazkiueda-com proof artifacts (keep README)
+.cursor/skills/verify-kazkiueda-com/artifacts/**
+!.cursor/skills/verify-kazkiueda-com/artifacts/README.md
